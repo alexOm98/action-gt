@@ -1,0 +1,47 @@
+on: [push]
+jobs:
+  createeee:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: node action.js
+
+  # main: 'src/assets/dfsd.js'
+
+# name: "Read file contents"
+
+# on: [push, pull_request]
+
+# jobs:
+#   file_contents:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v1
+
+#       - name: Read file contents
+#         id: read_file
+#         uses: andstor/file-reader-action@v1
+#         with:
+#           path: "src/assets/dfsd.js"
+#       - name: File contents
+#         run: echo "${ steps.read_file.outputs.contents }"
+
+# name: Build
+# on: [push, workflow_dispatch]
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Get project code
+#         uses: actions/checkout@v3
+#       - name: Install Deps
+#         run: npm ci
+#       - name: Upload artifacts
+#         uses: actions/upload-artifact@v3
+#         with:
+#           name: yyyyyyyyyyyyyyy
+#           path: src/assets/dfsd.js
