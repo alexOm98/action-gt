@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const fetch = require("node-fetch");
+const obk = require('../action-gt/obk')
 
-const obk = { name: "SUPERAGENT", login: "SUPERAGENT", password: "SUPERAGENT"}
 async function run() {
   try {
     let response = await fetch("https://projecct-manager-app.onrender.com/auth/signup", {
