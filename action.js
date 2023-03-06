@@ -1,4 +1,5 @@
 const core = require('@actions/core');
+const fetch = require("node-fetch");
 
 const obk = { name: "SUPERAGENT", login: "SUPERAGENT", password: "SUPERAGENT"}
 async function run() {
