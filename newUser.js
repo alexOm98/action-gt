@@ -1,1 +1,0 @@
-export const obk ={ name: "SUPERAGENT", login: "SUPERAGENT", password: "SUPERAGENT"}

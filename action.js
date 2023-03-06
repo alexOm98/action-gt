@@ -1,6 +1,5 @@
 
-import { obk } from './newUser';
-
+const obk ={ name: "SUPERAGENT", login: "SUPERAGENT", password: "SUPERAGENT"}
 async function addNewUser () {
   let response = await fetch("https://projecct-manager-app.onrender.com/auth/signup", {
     method: "POST",
