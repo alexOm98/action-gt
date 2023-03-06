@@ -1,5 +1,4 @@
 
-import { setFailed } from '@actions/core';
 import { obk } from './newUser';
 
 async function addNewUser () {
@@ -17,5 +16,5 @@ try {
   const newUser = addNewUser();
   console.log(newUser);
 } catch (error) {
-  setFailed(error.message);
+  console.log('eerr');
 }
